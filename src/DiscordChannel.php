@@ -15,10 +15,6 @@ class DiscordChannel
 
     public function send($notifiable, Notification $notification)
     {
-        if (!$channel = $notifiable->routeNotificationFor('discord')) {
-            return;
-        }
-
         $message = $notification->toDiscord($notifiable);
 
         $this->discord->send($message);
