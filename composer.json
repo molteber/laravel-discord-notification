@@ -1,0 +1,27 @@
+{
+  "name": "puz/laravel-discord-notification",
+  "description": "Enables Laravel 5.3 notifications to be sent through discord webhooks.",
+  "keywords": [
+    "laravel",
+    "notification",
+    "discord",
+    "webhook"
+  ],
+  "homepage": "https://github.com/molteber/laravel-discord-notification",
+  "licence": "MIT",
+  "authors": [
+    {
+      "name": "Morten Mehus",
+      "email": "contact@mortenmehus.no"
+    }
+  ],
+  "require": {
+    "guzzlehttp/guzzle": "^6.2",
+    "illuminate/notifications": "^5.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Puz\\DiscordNotification\\": "src"
+    }
+  }
+}
